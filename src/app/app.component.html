@@ -1,21 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
-
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Add Article</h1>
+    <h1 class="display-4"> Add Articles</h1>
     <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" class="form-control" name="title" id="" aria-describedby="title" placeholder="">
-      <hr>
-      <label for="link">Link</label>
-      <input type="text" class="form-control" name="link" id="" aria-describedby="title" placeholder="">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" id="" aria-describedby="title" #newTitle>
+        <hr>
+        <label for="link">Link</label>
+        <input type="text" class="form-control" name="link" id="" aria-describedby="title" #newLink>
+      </div>
+      <button class="btn btn-primary" (click)="addArticle(newTitle, newLink)">Add Article</button>
     </div>
-    <a name="" id="" class="btn btn-primary" href="#" role="button">Add Article</a>
-  </div>
 </div>
 
 <router-outlet></router-outlet>
