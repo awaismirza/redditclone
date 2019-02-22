@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from './article';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'redditclone';
-  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{
-    console.log(title.value, link.value);
-   return false;
-  }
+
+ articles: Array<Article>;
+ constructor(){
+  this.articles = [];
+ }
+createNewArticle(title: HTMLInputElement, link: HTMLInputElement){
+  let article = new Article(title.value,link.value);
+  this.articles.push(article);
+}
+
+ 
 }
