@@ -17,4 +17,6 @@ import { ArticleComponent } from './article/article.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  // Chapter 4 Ends Here 
+ }
