@@ -1,21 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<!-- <div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron">
   <div class="container">
-    <h1 class="display-4"> Add Articles</h1>
-    <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" class="form-control" name="title" id="" aria-describedby="title" #newTitle>
-        <hr>
-        <label for="link">Link</label>
-        <input type="text" class="form-control" name="link" id="" aria-describedby="title" #newLink>
-      </div>
-      <button class="btn btn-primary" (click)="createNewArticle(newTitle, newLink)">Add Article</button>
-    </div>
-</div> -->
+    <h1 class="display-3">Directives NgFor</h1>
+  </div>
 
-<!-- <app-article *ngFor="let article of articles" [article]= "article"></app-article> -->
+  <!-- <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of people let num = index">
+        <th scope="row">{{num}}</th>
+        <th scope="row">{{item.name}}</th>
+        <td>{{item.age}}</td>
+        <td>{{item.city}}</td>
+      </tr>
+    </tbody>
+  </table> -->
 
-<app-directives></app-directives>
-
+  <div [property]="expression"> hello</div>
 <router-outlet></router-outlet>

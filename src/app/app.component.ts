@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Article } from './article';
 
 @Component({
@@ -6,16 +6,22 @@ import { Article } from './article';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
- articles: Array<Article>;
+ people: Array<any>;
+
  constructor(){
-  this.articles = [];
+  this.people= [
+    {name: 'Awais', age: 25, city: 'Melbourne'},
+    {name: 'John', age: 60, city: 'Sydney'},
+    {name: 'Peter', age: 45, city: 'Adelade'}
+  ]
  }
-createNewArticle(title: HTMLInputElement, link: HTMLInputElement){
-  let article = new Article(title.value,link.value);
-  this.articles.push(article);
-}
 
+ ngOnInit(){
+   this.people.forEach(element => {
+     console.log(element);
+   });
+ }
  
 }
