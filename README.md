@@ -1,6 +1,6 @@
 # Redditclone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+This App is the project built in Awais Mirza Angular Course. : Link to 
 
 ## Development server
 
