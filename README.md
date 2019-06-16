@@ -1,6 +1,12 @@
 # Redditclone
 
-This App is the project built in Awais Mirza Angular Course. : Link to 
+This App is the project built in Awais Mirza Angular Course. : Link to https://www.udemy.com/angular-7-complete-essential-guide
+
+## How to run Project
+
+Make sure you have nodejs 8+ installed.
+> npm install 
+> ng serve
 
 ## Development server
 
